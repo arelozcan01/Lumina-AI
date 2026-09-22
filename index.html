@@ -1102,9 +1102,14 @@
                         <span style="font-size:14px;">👤</span>
                         <span id="sidebar-user-name" style="white-space:nowrap; text-overflow:ellipsis; overflow:hidden;">Misafir Modu</span>
                     </div>
-                    <button class="sidebar-btn" style="padding:4px 8px; border:none;" onclick="openAuthModal()" title="Giriş / Hesap">
-                        🔑
-                    </button>
+                    <div style="display:flex; gap:4px;">
+                        <button class="sidebar-btn" style="padding:4px 8px; border:none;" onclick="openAuthModal()" title="Giriş / Hesap">
+                            🔑
+                        </button>
+                        <button class="sidebar-btn" style="padding:4px 8px; border:none; color:#ef4444;" onclick="firebase.auth().signOut()" title="Çıkış Yap">
+                            🚪
+                        </button>
+                    </div>
                 </div>
             </div>
 
