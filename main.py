@@ -176,6 +176,7 @@ def check_and_increment_quota(uid: str, quota_type: str, has_custom_key: bool = 
 # GROQ MODEL CASCADE
 # ============================================================
 
+# main.py içindeki bu satır aynen kalsın:
 BUILTIN_GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").strip()
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 
